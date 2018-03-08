@@ -1,0 +1,25 @@
+.blueTest {
+    background-color: blue;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    text-align-last: center;
+    background-color: blue;
+}
+
+.gameRules {
+    background-color: darkgray;
+    color: white;
+}
+
+.infoBlock {
+    background-color: darkgray;
+    color: black;
+}
+
+.crystal {
+    height: 160px;
+    width: 160px;
+}
