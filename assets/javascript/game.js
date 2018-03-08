@@ -5,6 +5,7 @@ $(document).ready(function(){
   var waterStoneVal = Math.floor((Math.random()*12)+1);
   var triforceVal = Math.floor((Math.random()*12)+1);
   var goalNumVal = Math.floor((Math.random()*100)+20);
+  $("#randomNum").text(goalNumVal);
   var gemPower = 0;
   var numWins = 0;
   var numLosses = 0;
@@ -48,11 +49,12 @@ $(document).ready(function(){
         if (gemPower === goalNumVal) {
             alert("You Win!");
             numWins++;
-            $("#num")
+            $("#numWins").text(numWins);
             resetGame();
         } else if (gemPower > goalNumVal) {
           alert("You Lose!");
           numLosses++;
+          $("#numLosses").text(NumLosses);
           resetGame();
         } else {
 
@@ -66,6 +68,7 @@ $(document).ready(function(){
       waterStoneVal = Math.floor((Math.random()*12)+1);
       triforceVal = Math.floor((Math.random()*12)+1);
       goalNumVal = Math.floor((Math.random()*100)+20);
+      $("#randomNum").text(goalNumVal);
       gemPower = 0;
       $("#gemPower").text("Gem Power = 0")
   
